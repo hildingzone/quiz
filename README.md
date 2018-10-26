@@ -1,2 +1,2 @@
 # quiz
-Quiz
+Quiz for video game night
