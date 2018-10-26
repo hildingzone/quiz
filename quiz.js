@@ -56,7 +56,7 @@ var userAnswer = " ";
         "correct_answer": "userAnswer"
     }); 
     
-    req.open("GET", "https://opentdb.com/api.php?%20amount=5&category=15&difficulty=medium&type=boolean", true);
+    req.open("GET", "https://opentdb.com/api.php?%20amount=5&category=15&difficulty=medium&type=boolean");
     req.send(correctAnswer); 
 
     
