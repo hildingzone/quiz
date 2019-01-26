@@ -1,2 +1,2 @@
-# quiz
-Quiz for video game night
+# Video game Quiz
+Quiz made in javascript.
