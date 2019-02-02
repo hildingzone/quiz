@@ -22,7 +22,6 @@ var userAnswer = " ";
     });
    
 
-    // Json till JS
     
     var req = new XMLHttpRequest();
     req.onreadystatechange = function() {
@@ -31,14 +30,11 @@ var userAnswer = " ";
 
             
             
-            // tar frågor från json api
             document.getElementById("questionbox").innerHTML = mainQuestions.results[i].question; 
             
             
-            // rätt svar från json api
             userAnswer = document.getElementById("questionbox2").innerHTML = mainQuestions.results[i].correct_answer;  
 
-            // knapp för nästa nästa fråga
             document.getElementById("next").addEventListener("click", function() {
                 var display = document.getElementById("questionbox2");
                 if (display.style.visibility == "visible")
@@ -51,7 +47,6 @@ var userAnswer = " ";
         }
     };
     
-    // spara rätt svar
     var correctAnswer = JSON.stringify({
         "correct_answer": "userAnswer"
     }); 
